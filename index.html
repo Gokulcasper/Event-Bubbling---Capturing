@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Event Bubbling & Capturing in DOM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>         <!--  oncontextmenu="return false"  ;   onclick="location.href='https://www.google.com'"  -->
+    <header onclick="alert('Header Element')">SPORTS CLUB
+      <span style="padding:5px;font-size:10px;">credits</span>
+    </header>
+    <main>
+       
+      </div>
+
+      <div class="input-flx">
+        <input
+          text="text"
+          name="input-name"
+          placeholder="Favourite Sports"
+          class="input-txt"
+          id="input-txt-id"
+        />
+        <button class="input-button" id="input-button-id">save</button>
+      </div>
+
+      <ul id="input-list" class="input-list">
+
+        <li class="input-item"><div>ATHLETICS</div>
+            <div onclick="removeItem(event)">
+               
+                    <i class="fa-solid fa-trash-can"></i>
+               
+            </div></li>
+        <li class="input-item"><div>FOOTBALL</div>
+            <div onclick="removeItem(event)">
+               
+                    <i class="fa-solid fa-trash-can"></i>
+               
+            </div></li>
+        <li class="input-item"><div>HOCKEY</div>
+            <div onclick="removeItem(event)">
+               
+                    <i class="fa-solid fa-trash-can"></i>
+               
+            </div></li>
+        <li class="input-item"><div>KABADDI</div>
+            <div onclick="removeItem(event)">
+               
+                    <i class="fa-solid fa-trash-can"></i>
+               
+            </div></li>
+      </ul>
+    <style>
+    form {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    }
+    form, form * {
+        margin: 10px;
+        border: 2px solid rgb(79, 79, 255);
+        font-weight: bold;
+    }
+    form{
+        background-color: rgb(86, 142, 247);
+    }
+    form div{
+        border: 2px solid rgb(69, 249, 69);
+        background-color: lightgreen;
+    }
+    form p{
+        border: 2px solid rgb(240, 94, 116);
+        background-color: lightpink;
+    }
+
+    </style>
+    <form>Form
+        <div> Div 
+          <p> P </p>
+        </div>
+       
+    </form>
+    </main>
+
+    <script src="./script.js"></script>
+    <script src="./script2.js"></script>
+    <!-- <script src="./script3.js"></script> -->
+  </body>
+</html>
